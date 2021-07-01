@@ -33,34 +33,25 @@ public class TodosProgramas {
   //----------------------------------------------------------------------------                                                 
                 case 1:
                     System.out.println("Área de um triangulo");
-                    double lado1,lado2,area;
-       
+                    double lado1,lado2,area;       
         System.out.println("Informe o primeiro lado");
         lado1=input.nextDouble();
         System.out.println("Informe o segundo lado");
         lado2=input.nextDouble();
-        
-        area = (lado1*lado2)/2;
-        
-        System.out.println("A area do triangulo é "+area +" m²");
-        
-        
+        area = (lado1*lado2)/2;        
+        System.out.println("A area do triangulo é "+area +" m²");       
                     break;
 //------------------------------------------------------------------------------                    
                     case 2:
                            double nota1,nota2,nota3,nota4,media;
         System.out.println("Média de quatro notas");
-        System.out.println(" ");
-        
-        
+        System.out.println(" ");       
         System.out.println("Digite a primeira nota");
         nota1=input.nextDouble();
         while (nota1 <0 || nota1>10){
             System.err.println("Digite vlor entre 0 e 10");
             nota1=input.nextDouble();
-        }
-        
-        
+        }               
         System.out.println("Digite a segunda nota");
         nota2=input.nextDouble();
         while (nota2 <0 || nota2>10){
@@ -80,18 +71,15 @@ public class TodosProgramas {
             nota4=input.nextDouble();
         }
         
-        media = (nota1+nota2+nota3+nota4)/4;
-        
+        media = (nota1+nota2+nota3+nota4)/4;        
         System.out.println("A média das qutro notas é "+ media);
                     break;
 //------------------------------------------------------------------------------
                     case 3:
                          double precoFabrica,valorFinal,impostos = 0.45,porcentagemRevendedor = 0.28;
-        String marcaAutomovel;
-        
+        String marcaAutomovel;        
         System.out.println("Preço final de um automóvel");
-        System.out.println(" ");
-        
+        System.out.println(" ");        
         System.out.println("informe o preço de fábrica");
         precoFabrica=input.nextDouble();
         valorFinal=(precoFabrica*impostos)+(precoFabrica*porcentagemRevendedor)+precoFabrica;
@@ -99,15 +87,13 @@ public class TodosProgramas {
         System.out.println("Porcentagem de impostos: "+impostos*100+" %");
         System.out.println("Porcentagem do vendedor: "+porcentagemRevendedor*100+" %");
         System.out.println("O valor final do veículo é "+ valorFinal);
-
                     break;
 //------------------------------------------------------------------------------                    
                     case 4:
        final double entrada= 4.00;
         int qtPessoas ;
         double valorGasto;
-        String nomeFilme;
-        
+        String nomeFilme;        
         System.out.println("Gasto no cinema");
         System.out.println(" ");
         System.out.println("Informe o nome so filme");
@@ -115,28 +101,24 @@ public class TodosProgramas {
         System.out.println("Quantas pessoas foram ao cinema");
         qtPessoas=input.nextInt();
         valorGasto=qtPessoas*entrada;
-        System.out.println(qtPessoas+" pessoa foram assistir ao filme "+nomeFilme+ " e gastaram R$"+valorGasto);
-        
+        System.out.println(qtPessoas+" pessoa foram assistir ao filme "+nomeFilme+ " e gastaram R$"+valorGasto);        
         
                     break;
 //------------------------------------------------------------------------------                    
                     case 5:
         final double piso= 0.3;
-        double lado, qtPisos,area1;
-        
+        double lado, qtPisos,area1;        
         System.out.println("Quantidade de pisos por determinada área");
         System.out.println(" ");
         System.out.println("Informe a medida do um lado do quadrado");
-        lado=input.nextDouble();
-        
+        lado=input.nextDouble();        
         area1=Math.pow(lado, 2);
         qtPisos=Math.ceil(area1/piso);
         System.out.println("Para se cobrir uma área de "+area1+" m² são necessários "+qtPisos+" pisos");
                     break;
 //------------------------------------------------------------------------------                    
                     case 6:
-         double altura1, altura2, altura3, mediaAltura;
-        
+         double altura1, altura2, altura3, mediaAltura;        
         System.out.println("Média de altura de tres pessoas");
         System.out.println(" ");
         System.out.println("Informe a altura da primeira pessoa");
@@ -144,31 +126,25 @@ public class TodosProgramas {
         System.out.println("Informe a altura da segunda pessoa");
         altura2=input.nextDouble();
         System.out.println("Informe a altura da terceira pessoa");
-        altura3=input.nextDouble();
-        
-        mediaAltura = (altura1+altura2+altura3)/3;
-        
+        altura3=input.nextDouble();        
+        mediaAltura = (altura1+altura2+altura3)/3;        
         System.out.println("A média de altura das tres pessoas é "+mediaAltura);                 
                     break;
 //------------------------------------------------------------------------------                    
                     case 7:
-        double grausCelcius, farenheith;
-        
+        double grausCelcius, farenheith;        
         System.out.println("Converter Graus celcius em farenheith");
         System.out.println(" ");
         System.out.println("Informe a temperatura em celcius");
         grausCelcius=input.nextDouble();
-        farenheith = (9 * grausCelcius + 160)/5;
-        
+        farenheith = (9 * grausCelcius + 160)/5;        
         System.out.println(grausCelcius+" graus celcius convertidos para farenheith são "+farenheith);
                     break;
 //------------------------------------------------------------------------------                    
                     case 8:
-        double n1,n2,n3,n4,media1;
-        
+        double n1,n2,n3,n4,media1;        
         System.out.println("Média de 4 notas - aprovado/reprovado");
-        System.out.println(" ");
-        
+        System.out.println(" ");        
         System.out.println("Informe a nota A1");
         n1=input.nextDouble();
         while(n1<0 || n1>10){
@@ -193,8 +169,7 @@ public class TodosProgramas {
             System.err.println("Notas só vão de 0 a 10");
              n4=input.nextDouble();
              }
-        media1= (n1+n2+n3+n4)/4;
-        
+        media1= (n1+n2+n3+n4)/4;        
         if (media1<6){
             System.err.println("O aluno obteve média "+media1+" e foi reprovado");
         }else{
@@ -211,8 +186,7 @@ public class TodosProgramas {
          System.out.println("informe o valor de B");
         nb=input.nextInt();
          System.out.println("informe o valor de C");
-        nc=input.nextInt();
-        
+        nc=input.nextInt();        
         if (na==nb || na==nc || nc==nb){
             System.err.println("Não podem existir valores repetidos");
         }else{
@@ -238,8 +212,7 @@ public class TodosProgramas {
         System.out.println("Informe a idade do associado");
         idadeAssociado=input.nextInt();
         System.out.println("Informe o valor da mensalidade");
-        valorMensalidade=input.nextDouble();
-        
+        valorMensalidade=input.nextDouble();        
         if (idadeAssociado >0 && idadeAssociado<=12){
             precoFinal = valorMensalidade * ((porcentegem0a12/100)+1);
             System.out.println("Idade do associado: "+idadeAssociado+" anos");
@@ -274,8 +247,7 @@ public class TodosProgramas {
             System.out.println("Valor da conta para consumo até 80Kw e a partir de 80Kw");
                         System.out.println(" ");
             System.out.println("Informe o consumo de Kw utilizado");
-        consumoKw=input.nextDouble();
-        
+        consumoKw=input.nextDouble();        
         if (consumoKw > 0 && consumoKw <= 80){
         valorPago = consumoKw*consumoAte80;
             System.out.println("O valor a ser pago para consumo até 80 Kw é de R$"+consumoAte80+" por Kw totalizando R$"+valorPago);
@@ -293,8 +265,7 @@ public class TodosProgramas {
                     case 14:
         System.out.println("Números ímpares no intervalo de 1 até 100"); 
         System.out.println("  ");
-        int num=0;
-        
+        int num=0;        
         while(num<=100){
         if((num%2)!=0){
            System.out.println(num+" ");       
@@ -310,33 +281,26 @@ public class TodosProgramas {
         System.out.println("Informe um número inicial");
         numeroInicial=input.nextInt();
         System.out.println("Informe um número final");
-        numeroFinal=input.nextInt();
-        
+        numeroFinal=input.nextInt();        
          while (numeroFinal < numeroInicial){
                  System.err.println("O número inicial não pode ser maio que o final");
             System.out.println("Digite novamente");
             System.out.println("Informe um número inicial");
         numeroInicial=input.nextInt();
         System.out.println("Informe um número final");
-        numeroFinal=input.nextInt();
-            
-         }
-        
-        
-       while (numeroInicial <=numeroFinal){
-          
+        numeroFinal=input.nextInt();            
+         }                
+       while (numeroInicial <=numeroFinal){          
        if((numeroInicial%2)==0){
            System.out.println(numeroInicial+" ");       
        }
        numeroInicial=numeroInicial+1;
        }
-        
                     break;
 //------------------------------------------------------------------------------                     
                     case 16:
      int []idadePessoa = new int [10];
-       int f,totalMais50 = 0;
-       
+       int f,totalMais50 = 0;       
         System.out.println("Número de pessoas acima de 50 anos");
         System.out.println(" ");
         System.out.println("Informe a idade");
@@ -344,8 +308,7 @@ public class TodosProgramas {
         for(f=0;f<10;f++){
         idadePessoa[f]=input.nextInt();
         }
-     for(f=0;f<10;f++){
-                 
+     for(f=0;f<10;f++){                 
          if(idadePessoa[f] > 50){
          System.out.print(idadePessoa[f]+" - ");
          totalMais50 = totalMais50 + 1;          
